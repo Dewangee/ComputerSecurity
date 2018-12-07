@@ -1,0 +1,35 @@
+import datetime
+import hashlib
+
+#generates the hash value of a string via sha256() of hashlib
+def genererateHASH(string):
+    lib = hashlib.sha256()
+    lib.update(string.encode())
+    H = lib.hexdigest()
+    return H
+
+#This function returns the reverse of a string
+def reverseOTP(string):
+    return string[::-1]
+
+#This function gives the final OTP based on the initial hash value
+def F(H):
+
+    for i in range(10):                             #For iterated hashing, I run the loop 10 times
+        sum = 0
+        for j in range(len(H)):                  #The hash value is iterated over
+            sum += ord(H[j])                     #The sum of ascii values of all the characters is taken
+
+        H = genererateHASH(reverseOTP(str(sum)))     #A new hash value is created by reversing the sum generated and providing it as input to SHA256
+
+        if (i==9):                                     #The value is returned for the 10th iteration
+            return reverseOTP(str(sum))
+
+
+def main():
+    H= genererateHASH(str(datetime.datetime.now()))   #The date and timemstamp is used to create a hash
+    file = open("Hash.txt","w").write(H)              #The hash value is saved in a text file
+    O = F(H)                                #The create OTP function gives the 4 digit required OTP
+    print(O)
+
+main()
