@@ -1,0 +1,12 @@
+[02/Nov/2018 03:44:28] INFO Request for transaction created by induser10
+[02/Nov/2018 03:46:43] INFO Request for transaction created by induser10
+[02/Nov/2018 03:48:32] INFO Transaction 6 approved by : admin
+[02/Nov/2018 03:48:45] INFO Transaction 7 approved by : admin
+[02/Nov/2018 03:50:06] INFO Transaction 24 approved by : admin
+[02/Nov/2018 04:10:50] INFO Transaction 23 approved by : dewangee.agrawal
+[02/Nov/2018 04:55:22] INFO Request for transaction created by employee2
+[02/Nov/2018 04:56:54] INFO Transaction 25 approved by : dewangee.agrawal
+[02/Nov/2018 15:31:21] INFO Request for transaction 26 from induser10, ************0123 to merchant4, ************3747 for amount 100 sent by induser10
+[02/Nov/2018 15:31:45] INFO Request for transaction 27 from None to induser10, ************0123 for amount 1000 sent by induser10
+[02/Nov/2018 15:32:34] INFO Transaction 26 from induser10, ************0123 to merchant4, ************3747 for amount 100 approved by : admin
+[02/Nov/2018 15:33:04] INFO Transaction 27 from None to induser10, ************0123 for amount 1000 approved by : admin

@@ -1,0 +1,4 @@
+[01/Nov/2018 23:18:36] INFO User Delete Request sent by merchant2 for merchant2 to employee2
+[01/Nov/2018 23:20:53] INFO User Delete Request sent by merchant3 for merchant3 to employee2
+[01/Nov/2018 23:37:25] INFO User request From merchant2 to Delete User Profile approved by employee2 
+[01/Nov/2018 23:38:33] INFO User request From merchant2 to Complete Delete User Profile declined by dewangee.agrawal

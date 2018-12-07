@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+	{% include 'navbar.html' %}
+
+	<div class="d-flex flex-column align-items-center mt-4">
+
+		{% if home %}
+			<h1>Welcome To SBS</h1>
+		{% endif %}
+
+		{% block content %}{% endblock %}
+
+	</div>
+{% endblock %}
